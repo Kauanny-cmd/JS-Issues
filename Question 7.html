@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7</title>
+</head>
+<body>
+    
+<script>
+
+        function cacapalavra(){
+            var frase = prompt('Informe uma frase: ');
+            var palavra = prompt('Agora, informe a palavra desejada: ');
+            var posicao = frase.indexOf(palavra) !==-1;
+            if(posicao == true){
+                posicao = `A palavra "${palavra}" esta no índice ${frase.indexOf(palavra) + 1}`;
+            }
+            else{
+                posicao = `A palavra "${palavra}" não foi encontrada`;
+            }
+            return document.write(posicao);
+        }
+        cacapalavra()
+
+</script>
+
+</body>
+</html>
