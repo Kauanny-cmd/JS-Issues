@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var dna = prompt("Insira a cadeia de DNA")
+
+        codDNA = function () {
+            res = (" ")
+            for (x of dna) {
+                if (x == "A") {
+                    res = res + "T"
+                }
+                else if (x == "T") {
+                    res = res + "A"
+                }
+                else if (x == "C") {
+                    res = res + "G"
+                }
+                else if (x == "G") {
+                    res = res + "C"
+                }
+            }
+            return document.write(res.toLocaleUpperCase())
+        }
+
+        codDNA()
+    </script>
+</body>
+
+</html>
